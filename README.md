@@ -43,7 +43,7 @@ Execution:
 ---------
 The project is developed using Eclipse.
 
-- To execute myftpserver, goto DCSProject2Server’s bin directory and run 'java com.ds.server.myftpserver <portNumber> <terminatePortNumber>’
-- To execute myftp, goto DCSProject2Client’s bin directory and run 'java com.ds.client.myftp <ipAddress> <portNumber> <terminatePortNumber>’
+- To execute myftpserver, goto DCSProject2Server’s bin directory and run 'java com.ds.server.myftpserver portNumber terminatePortNumber’
+- To execute myftp, goto DCSProject2Client’s bin directory and run 'java com.ds.client.myftp ipAddress portNumber terminatePortNumber’
 
 Note: This project was done in its entirety by Prasad Mate and Sharmin Pathan. We hereby state that we have not received unauthorized help of any form. The project description is taken from the description provided in CSCI 6780.
