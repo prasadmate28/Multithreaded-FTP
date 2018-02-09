@@ -9,7 +9,7 @@ Technologies Used: Java 1.8
 Problem Statement: To design and implement multithreaded FTP Client and Server
 
 Commands:
---------
+------------------
 
 We have implemented the following FTP commands. The syntax of the command is indicated in the parenthesis.
 
@@ -36,11 +36,11 @@ Note that there might be several normal threads executing concurrency. The serve
 When a client connects to the “tport”, the server accepts the terminate command. The command will identify (using the command-ID) which command needs to be terminated. It will set the status of that command to “terminate” so that the thread executing that command will notice it and gracefully terminate.
 
 FTP Client:
-----------
+--------------------------------
 The ftp client program will take three command line parameters the machine name where the server resides, the normal port number, and the terminate port number. Once the client starts up, it will display a prompt “mytftp>”. It should then accept and execute commands as in Project 1. However, if any command is appended with a “&” sign (e.g., get file1.txt &), then this command should be executed in a separate thread. The main thread should continue to wait for more commands (i.e., it should not be blocked for the other threads to complete). For “get” and “put” commands, the client should display the command-ID received from the server. When the user enters a terminate command, the client should use the tport to relay the command to the server. The client should also clean up any files that were created as a result of commands that were terminated.
 
 Execution:
----------
+---------------------------------------
 The project is developed using Eclipse.
 
 - To execute myftpserver, goto DCSProject2Server’s bin directory and run 'java com.ds.server.myftpserver portNumber terminatePortNumber’
